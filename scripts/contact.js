@@ -3,13 +3,13 @@ const media = document.querySelector(".contact-media");
 const contactList = [{
     icon: "fa-solid fa-phone",
     name: "Phone",
-    value: "+91 6396691952",
-    href: "tel:+916396691952",
+    value: "+91 453275489",
+    href: "tel:+917854540954",
 }, {
     icon: "fa-solid fa-envelope",
     name: "E-Mail",
-    value: "pandatkanak9@gmail.com",
-    href: "mailto:pandatkanak9@gmail.com",
+    value: "kanak598@gmail.com",
+    href: "mailto:kanak598@gmail.com",
 }, {
     icon: "fa-solid fa-location-dot",
     name: "Country",
