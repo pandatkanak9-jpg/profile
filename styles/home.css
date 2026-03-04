@@ -1,0 +1,219 @@
+#home.content.active{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+    width: 90%;
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    animation: float 4s ease-in-out infinite;
+}
+
+.profile-img {
+    width: 260px;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Neon Glow Always Visible */
+.profile-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00f2ff, #0066ff, #ff00cc, #00f2ff);
+    background-size: 300% 300%;
+    z-index: -1;
+    filter: blur(12px);
+    animation: neonMove 6s linear infinite;
+}
+
+/* Smooth Gradient Animation */
+@keyframes neonMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.details h2{
+    font-size: 2.5rem;
+}
+
+.details h2 span{
+    background: linear-gradient(to right, var(--green), var(--white));
+    padding-bottom: 2px;
+    border-bottom: 5px solid var(--green);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.details h3{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.details h3 span{
+    color: var(--green);
+    display: inline-block;
+    min-width: 130;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.details h3 span::after{
+    content: "|";
+    margin-left: 5px;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn{
+    width: 12rem;
+    padding: 0.8rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background: var(--green);
+    cursor: pointer;
+    border: none;
+    transition: all ease 0.3s;
+}
+
+.btn:hover{
+    box-shadow: 3px 3px 3px var(--green), -3px 3px 3px var(--green), 3px -3px 3px var(--green), -3px -3px 3px var(--green);
+    background: transparent;
+    border: 2px solid var(--green);
+    color: var(--white);
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: var(--green);
+    border: 2px solid var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    transition: all ease 0.3s;
+}
+
+.social-icons a i{
+    font-size: 3rem;
+}
+
+.social-icons a:hover{
+    color: var(--primary);
+    background: var(--green);
+    box-shadow: 2px 2px 2px var(--green), -2px 2px 2px var(--green), 2px -2px 2px var(--green), -2px -2px 2px var(--green);
+    scale: 105%;
+}
+
+.details p{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+@media screen and (width >= 768px){
+    #home.content.active{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        gap: 3.5rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .details h2{
+        font-size: 3rem;
+    }
+
+    .details h3{
+        font-size: 2.5rem;
+    }
+
+    .social-icons{
+        font-size: 3rem;
+    }
+
+    .bottom{
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btn{
+       border-radius: 50px;
+    }
+}
+
+@media screen and (width >= 1024px){
+    #home.content.active{
+        margin: 3rem auto;
+    }
+
+    .img-container{
+        width: 400px;
+        height: 400px;
+    }
+
+    .details{
+        gap: 30px;
+    }
+
+    .details h2{
+        font-size: 5rem;
+    }
+
+    .details h3{
+        font-size: 2.8rem;
+    }
+
+    .details p{
+        font-size: 1.6rem;
+    }
+}
