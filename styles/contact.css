@@ -68,7 +68,7 @@
 
 form{
     background: var(--disabled);
-    padding: 0.5rem 0.5rem;
+    padding: 1rem 1rem;
     border-radius: 10px;
 }
 
