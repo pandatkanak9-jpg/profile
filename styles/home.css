@@ -80,6 +80,7 @@
     min-width: 130;
     overflow: hidden;
     white-space: nowrap;
+    font-size: 1.1rem;
 }
 
 .details h3 span::after{
@@ -189,6 +190,10 @@
     .btn{
        border-radius: 50px;
     }
+
+    .details h3 span{
+        font-size: 2.6rem;
+    }
 }
 
 @media screen and (width >= 1024px){
@@ -215,5 +220,15 @@
 
     .details p{
         font-size: 1.6rem;
+    }
+
+    .details h3 span{
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (width >= 1924px){
+    #home.content.active{
+        margin: 3rem auto;
     }
 }
