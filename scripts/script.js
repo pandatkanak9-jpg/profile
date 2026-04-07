@@ -52,27 +52,23 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 const navlinks = document.querySelectorAll(".navlink");
 const tabs = document.querySelectorAll(".content");
-
-navlinks.forEach((link)=>{
-    link.addEventListener("click",(e)=>{
+                        
+navlinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+    
         e.preventDefault();
-        link.classList.add("active");
-        navlinks.forEach((l)=>{
-            if(l === link){
-                l.classList.add("active");
-            }else{
-                l.classList.remove("active");
-            }
-        });
-
+        
         const tabName = link.dataset.tab;
 
-        tabs.forEach((tab)=>{
-            if(tab.id === tabName){
-                tab.classList.add("active");
-            }else{
-                tab.classList.remove("active");
-            }
-        })
+        navlinks.forEach(l => l.classList.toggle("active", l === link));
+        tabs.forEach(tab => tab.classList.toggle("active", tab.id === tabName));
+
+       
+        if (toggle) {
+            toggle.checked = false; 
+            document.body.classList.remove("no-scroll"); 
+        }
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-});                                    
+});

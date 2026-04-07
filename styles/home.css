@@ -20,7 +20,6 @@
     display: block;
 }
 
-/* Neon Glow Always Visible */
 .profile-container::before {
     content: "";
     position: absolute;
@@ -33,7 +32,6 @@
     animation: neonMove 6s linear infinite;
 }
 
-/* Smooth Gradient Animation */
 @keyframes neonMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
