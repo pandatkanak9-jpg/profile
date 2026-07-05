@@ -120,31 +120,31 @@ aboutTabs.forEach((tab) => {
                     about: "Programming Languages",
                     skill: "C / C++",
                     icon: "fa-solid fa-code",
-                    level: 90
+                    level: 95
                 },
                 {
                     about: "Web Development",
                     skill: "HTML / CSS / JavaScript",
                     icon: "fa-solid fa-laptop-code",
-                    level: 90
+                    level: 95
                 },
                 {
                     about: "Frontend Framework",
                     skill: "React (Learning)",
                     icon: "fa-brands fa-react",
-                    level: 50
+                    level: 90
                 },
                 {
                     about: "Problem Solving",
                     skill: "DSA & Logical Thinking",
                     icon: "fa-solid fa-brain",
-                    level: 35
+                    level: 45
                 },
                 {
-                    about: "Python Development",
+                    about: "Python Programming",
                     skill: "Core Python, OOP Concepts, Problem Solving",
                     icon: "fa-brands fa-python",
-                    level: 25
+                    level: 95
                 },
                 {
                     about: "Tools",
