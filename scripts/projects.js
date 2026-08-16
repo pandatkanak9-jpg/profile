@@ -4,25 +4,41 @@ const projectList = [{
     description: "A responsive portfolio website showcasing my projects, skills, and achievements using modern web technologies and clean user-friendly design.",
     techStack: ["HTML", "CSS", "JavaScript"],
     image: "assets/profile.jpeg",
-    liveLink: "#",
-    githublink: "#",
+    liveLink: "https://pandatkanak9-jpg.github.io/profile/",
+    githublink: "https://github.com/pandatkanak9-jpg",
 }, {
     number: "02",
+    title: "WorldAtlas",
+    description: "WorldAtlas is a responsive React-based web app that lets users explore detailed information about countries, including their flags, regions, population, languages, currencies, and more.",
+    techStack: ["Reactjs", "CSS", "Express", "Rest API"],
+    image: "assets/WorldAtlas.jpeg",
+    liveLink: "https://pandatkanak9-jpg.github.io/WorldAtlas_project/",
+    githublink: "https://github.com/pandatkanak9-jpg",
+},{
+    number: "03",
+    title: "Task Management",
+    description: "Task Management is a web application where admins can assign and manage tasks, while employees can track and complete their assigned tasks through a simple and responsive interface.",
+    techStack: ["Reactjs", "Tailwind CSS", "Advanced JavaScript", "Context API"],
+    image: "assets/Task.jpeg",
+    liveLink: "https://pandatkanak9-jpg.github.io/Task-manager-react/",
+    githublink: "https://github.com/pandatkanak9-jpg",
+}, {
+    number: "04",
+    title: "Pokemon Search",
+    description: "Pokémon Search is a responsive web application that allows users to search and explore Pokémon with detailed information such as abilities, types, stats, images, and other useful details.",
+    techStack: ["Reactjs", "CSS", "API"],
+    image: "assets/pokemon.jpeg",
+    liveLink: "#",
+    githublink: "https://github.com/pandatkanak9-jpg",
+},{
+    number: "05",
     title: "Currency Convertor",
     description: "A real-time currency converter application that fetches exchange rates dynamically and provides accurate, fast, and user-friendly currency calculations.",
     techStack: ["HTML", "CSS", "JavaScript", "API"],
     image: "assets/converter.jpeg",
-    liveLink: "#",
-    githublink: "#",
-}, {
-    number: "03",
-    title: "RPS Game",
-    description: "A simple interactive browser game built with JavaScript, featuring engaging gameplay mechanics, responsive controls, and clean, minimal design.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    image: "assets/game.jpeg",
-    liveLink: "#",
-    githublink: "#",
-}];
+    liveLink: "https://pandatkanak9-jpg.github.io/Currency-Converter/",
+    githublink: "https://github.com/pandatkanak9-jpg",
+}, ];
 
 const projects = document.querySelector(".projects");
 

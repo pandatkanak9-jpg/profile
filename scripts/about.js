@@ -132,13 +132,13 @@ aboutTabs.forEach((tab) => {
                     about: "Frontend Framework",
                     skill: "React (Learning)",
                     icon: "fa-brands fa-react",
-                    level: 90
+                    level: 95
                 },
                 {
                     about: "Problem Solving",
                     skill: "DSA & Logical Thinking",
                     icon: "fa-solid fa-brain",
-                    level: 45
+                    level: 35
                 },
                 {
                     about: "Python Programming",
